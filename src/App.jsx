@@ -12,7 +12,6 @@ function ProfileCard({ name, image, description }) {
       </div>
 
       <h2>{name}</h2>
-
       <p>{description}</p>
 
       <button onClick={handleProfileClick}>
@@ -29,7 +28,7 @@ function App() {
 
       <ProfileCard
         name="Rohit Verma"
-        image="/profile.jpeg"
+        image={`${import.meta.env.BASE_URL}profile.jpeg`}
         description="MCA student passionate about web development and learning new technologies."
       />
     </div>
